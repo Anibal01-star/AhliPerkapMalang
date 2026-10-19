@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahli Perkap Malang — Sewa Perlengkapan Acara Praktis & Terpercaya</title>
+  <meta name="description" content="Katalog penyewaan perlengkapan acara di Malang: LCD Proyektor, Sound System, Mic Wireless, Handy Talky, Lighting, dan kebutuhan kepanitiaan event." />
+  <meta name="keywords" content="sewa perkap malang, sewa sound malang, sewa proyektor malang, sewa ht malang, rental alat event malang" />
+  <meta name="theme-color" content="#ea580c" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS via CDN (NO BLUE TONES - Clean Utility Theme) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+          },
+          colors: {
+            primary: {
+              50: '#fff7ed',
+              100: '#ffedd5',
+              200: '#fed7aa',
+              300: '#fdba74',
+              400: '#fb923c',
+              500: '#f97316',
+              600: '#ea580c',
+              700: '#c2410c',
+              800: '#9a3412',
+              900: '#7c2d12',
+            },
+            charcoal: {
+              700: '#334155',
+              800: '#1e293b',
+              900: '#0f172a',
+              950: '#020617',
+            },
+            warm: {
+              50: '#fafaf9',
+              100: '#f5f5f4',
+              200: '#e7e5e4',
+              300: '#d6d3d1',
+              offwhite: '#f8fafc',
+            }
+          },
+          boxShadow: {
+            'soft': '0 4px 20px -2px rgba(15, 23, 42, 0.05)',
+            'card-hover': '0 12px 30px -4px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(249, 115, 22, 0.06)',
+            'drawer': '-10px 0 35px -5px rgba(15, 23, 42, 0.15)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f8fafc;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #fdba74;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ea580c;
+    }
+
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+  </style>
+</head>
+
+<body class="bg-warm-offwhite text-charcoal-900 font-sans antialiased selection:bg-primary-500 selection:text-white">
+
+  <!-- ========================================================
+       A. NAVBAR
+       ======================================================== -->
+  <header id="main-header" class="sticky top-0 z-40 glass-nav border-b border-warm-200 transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Wordmark / Logo -->
+        <a href="#beranda" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-primary-600 to-primary-500 flex items-center justify-center text-white shadow-sm group-hover:scale-105 transition-transform">
+            <i class="fa-solid fa-layer-group text-lg"></i>
+          </div>
+          <div>
+            <div class="text-xl font-extrabold tracking-tight text-charcoal-900 leading-none">
+              Ahli Perkap <span class="text-primary-600">Malang</span>
+            </div>
+            <div class="text-[11px] font-semibold text-charcoal-700 tracking-wide mt-1">
+              Katalog Sewa Perlengkapan Acara
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-charcoal-700">
+          <a href="#beranda" class="hover:text-primary-600 transition-colors">Beranda</a>
+          <a href="#kategori" class="hover:text-primary-600 transition-colors">Kategori</a>
+          <a href="#katalog" class="hover:text-primary-600 transition-colors">Katalog</a>
+          <a href="#tentang" class="hover:text-primary-600 transition-colors">Tentang Kami</a>
+          <a href="#faq" class="hover:text-primary-600 transition-colors">FAQ</a>
+          <a href="#kontak" class="hover:text-primary-600 transition-colors">Kontak</a>
+        </nav>
+
+        <!-- Action Buttons -->
+        <div class="flex items-center gap-3">
+          
+          <!-- Rental Cart / Selection Button -->
+          <button id="open-cart-btn" class="relative px-3.5 py-2.5 rounded-xl border border-warm-200 hover:border-primary-500 bg-white text-charcoal-800 hover:text-primary-600 font-semibold text-sm transition-all flex items-center gap-2 shadow-2xs">
+            <i class="fa-solid fa-clipboard-list text-base text-primary-600"></i>
+            <span class="hidden sm:inline">Pilihan Sewa</span>
+            <span id="cart-badge" class="min-w-5 h-5 px-1.5 rounded-full bg-primary-600 text-white text-[11px] font-bold flex items-center justify-center">
+              0
+            </span>
+          </button>
+
+          <!-- CTA Button: Lihat Katalog -->
+          <a href="#katalog" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-primary-600 hover:bg-primary-700 text-white font-bold text-sm shadow-sm transition-all duration-200 transform hover:-translate-y-0.5">
+            <span>Lihat Katalog</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+
+          <!-- Mobile Menu Hamburger -->
+          <button id="mobile-menu-btn" class="lg:hidden p-2.5 rounded-xl text-charcoal-800 hover:text-primary-600 hover:bg-warm-100 transition-colors" aria-label="Buka Menu">
+            <i class="fa-solid fa-bars text-xl"></i>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-warm-200 bg-white px-5 py-4 space-y-3 shadow-lg">
+      <div class="flex flex-col space-y-2 text-sm font-semibold text-charcoal-800">
+        <a href="#beranda" class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-primary-50 hover:text-primary-600 transition">Beranda</a>
+        <a href="#kategori" class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-primary-50 hover:text-primary-600 transition">Kategori Perlengkapan</a>
+        <a href="#katalog" class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-primary-50 hover:text-primary-600 transition">Katalog Produk</a>
+        <a href="#tentang" class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-primary-50 hover:text-primary-600 transition">Tentang Kami</a>
+        <a href="#faq" class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-primary-50 hover:text-primary-600 transition">Tanya Jawab (FAQ)</a>
+        <a href="#kontak" class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-primary-50 hover:text-primary-600 transition">Kontak</a>
+      </div>
+      <div class="pt-2 border-t border-warm-200 flex flex-col gap-2">
+        <a href="#katalog" class="w-full text-center py-2.5 rounded-xl bg-primary-600 text-white font-bold text-sm">
+          Lihat Katalog
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================
+         B. HERO SECTION (MODERN UTILITY - NO UNVERIFIED STATS)
+         ======================================================== -->
+    <section id="beranda" class="pt-10 pb-16 lg:pt-16 lg:pb-24 bg-gradient-to-b from-white via-warm-50 to-warm-offwhite border-b border-warm-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Column: Clear Value Proposition -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary-50 border border-primary-200 text-primary-700 text-xs font-semibold">
+              <i class="fa-solid fa-sparkles text-primary-500"></i>
+              <span>Penyewaan Perlengkapan Acara di Malang Raya</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-charcoal-900 tracking-tight leading-[1.2]">
+              Sewa Perlengkapan Acara, <br class="hidden sm:inline" />
+              <span class="text-primary-600">Lebih Praktis.</span>
+            </h1>
+
+            <p class="text-base sm:text-lg text-charcoal-700 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+              Temukan perlengkapan komunikasi, multimedia, dan kebutuhan acara untuk kegiatan organisasi, kampus, maupun acara lainnya di Malang.
+            </p>
+
+            <!-- Dual CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
+              <a href="#katalog" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-primary-600 hover:bg-primary-700 text-white font-bold text-sm shadow-sm transition-all flex items-center justify-center gap-2.5">
+                <i class="fa-solid fa-list-ul"></i>
+                <span>Jelajahi Katalog</span>
+              </a>
+              <a href="https://wa.me/6281234567890?text=Halo%20Ahli%20Perkap%20Malang,%20saya%20ingin%20konsultasi%20kebutuhan%20acara%20saya." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-3.5 rounded-xl border border-charcoal-700/20 bg-white hover:bg-warm-50 text-charcoal-800 font-bold text-sm transition-all flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-emerald-600 text-base"></i>
+                <span>Konsultasi via WhatsApp</span>
+              </a>
+            </div>
+
+            <!-- Operational Highlights (No fake stats, factual operational context) -->
+            <div class="pt-6 border-t border-warm-200/80 grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-warm-100 text-primary-600 flex items-center justify-center text-sm shrink-0 mt-0.5">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-bold text-charcoal-900">Unit Bersih & Siap Pakai</div>
+                  <div class="text-[11px] text-charcoal-600">Pengecekan fungsi sebelum serah terima</div>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-warm-100 text-primary-600 flex items-center justify-center text-sm shrink-0 mt-0.5">
+                  <i class="fa-solid fa-receipt"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-bold text-charcoal-900">Daftar Tarif Jelas</div>
+                  <div class="text-[11px] text-charcoal-600">Harga harian tertera tanpa mark-up</div>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-warm-100 text-primary-600 flex items-center justify-center text-sm shrink-0 mt-0.5">
+                  <i class="fa-solid fa-handshake"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-bold text-charcoal-900">Alur Sewa Praktis</div>
+                  <div class="text-[11px] text-charcoal-600">Pilih alat dan kirim via WhatsApp</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Clean Two-Column Visual Presentation -->
+          <div class="lg:col-span-5">
+            <div class="bg-white p-3 rounded-2xl border border-warm-200 shadow-soft">
+              <div class="relative h-72 sm:h-80 w-full rounded-xl overflow-hidden bg-charcoal-900">
+                <img 
+                  src="https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&w=1000&q=80" 
+                  alt="Perlengkapan Acara Ahli Perkap Malang" 
+                  class="w-full h-full object-cover opacity-90"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950/80 via-transparent to-transparent"></div>
+                <div class="absolute bottom-4 left-4 right-4 text-white">
+                  <div class="text-xs font-semibold text-primary-300 uppercase tracking-wider">Katalog Terkurasi</div>
+                  <div class="text-base font-bold mt-0.5">Audio Sound, Proyektor, Mic & HT Komunikasi</div>
+                  <div class="text-xs text-warm-200 mt-1">Siap untuk seminar, rapat, reuni, pameran, dan kegiatan organisasi.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         C. CATEGORY SECTION (4 PILLARS)
+         ======================================================== -->
+    <section id="kategori" class="py-14 bg-white border-b border-warm-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
+          <div>
+            <div class="text-xs font-bold uppercase tracking-wider text-primary-600">Jelajahi Berdasarkan Kategori</div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-charcoal-900 tracking-tight mt-1">
+              Kategori Perlengkapan
+            </h2>
+          </div>
+          <p class="text-xs sm:text-sm text-charcoal-600 max-w-md">
+            Pilih kategori untuk langsung memfilter daftar perlengkapan sesuai dengan kebutuhan teknis acara Anda.
+          </p>
+        </div>
+
+        <!-- 4 Core Pillars Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          
+          <!-- Category 1: HT & Alat Komunikasi -->
+          <div onclick="filterByCategory('ht-komunikasi')" class="category-card cursor-pointer p-6 rounded-2xl bg-warm-offwhite border border-warm-200 hover:border-primary-500 hover:bg-white hover:shadow-card-hover transition-all duration-200 group flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-primary-100 text-primary-600 flex items-center justify-center text-xl mb-4 group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-walkie-talkie"></i>
+              </div>
+              <h3 class="font-bold text-base text-charcoal-900 group-hover:text-primary-600 transition-colors">
+                HT & Alat Komunikasi
+              </h3>
+              <p class="text-xs text-charcoal-600 mt-2 leading-relaxed">
+                Handy Talky (HT) dual band, megaphone toa lapangan, dan aksesoris koordinasi panitia.
+              </p>
+            </div>
+            <div class="mt-6 flex items-center gap-1.5 text-xs font-bold text-primary-600">
+              <span>Buka Produk</span>
+              <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+            </div>
+          </div>
+
+          <!-- Category 2: Proyektor & Multimedia -->
+          <div onclick="filterByCategory('proyektor-multimedia')" class="category-card cursor-pointer p-6 rounded-2xl bg-warm-offwhite border border-warm-200 hover:border-primary-500 hover:bg-white hover:shadow-card-hover transition-all duration-200 group flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-primary-100 text-primary-600 flex items-center justify-center text-xl mb-4 group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-video"></i>
+              </div>
+              <h3 class="font-bold text-base text-charcoal-900 group-hover:text-primary-600 transition-colors">
+                Proyektor & Multimedia
+              </h3>
+              <p class="text-xs text-charcoal-600 mt-2 leading-relaxed">
+                LCD Proyektor terang, layar tripod screen, VGA splitter, dan kabel konverter presentasi.
+              </p>
+            </div>
+            <div class="mt-6 flex items-center gap-1.5 text-xs font-bold text-primary-600">
+              <span>Buka Produk</span>
+              <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+            </div>
+          </div>
+
+          <!-- Category 3: Sound System & Mikrofon -->
+          <div onclick="filterByCategory('audio-sound')" class="category-card cursor-pointer p-6 rounded-2xl bg-warm-offwhite border border-warm-200 hover:border-primary-500 hover:bg-white hover:shadow-card-hover transition-all duration-200 group flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-primary-100 text-primary-600 flex items-center justify-center text-xl mb-4 group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-volume-high"></i>
+              </div>
+              <h3 class="font-bold text-base text-charcoal-900 group-hover:text-primary-600 transition-colors">
+                Sound System & Mikrofon
+              </h3>
+              <p class="text-xs text-charcoal-600 mt-2 leading-relaxed">
+                Speaker aktif, pasif, portable, power mixer 4 & 6 channel, mic wireless, dan stand mic.
+              </p>
+            </div>
+            <div class="mt-6 flex items-center gap-1.5 text-xs font-bold text-primary-600">
+              <span>Buka Produk</span>
+              <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+            </div>
+          </div>
+
+          <!-- Category 4: Perlengkapan Organisasi & Kepanitiaan -->
+          <div onclick="filterByCategory('lighting-listrik')" class="category-card cursor-pointer p-6 rounded-2xl bg-warm-offwhite border border-warm-200 hover:border-primary-500 hover:bg-white hover:shadow-card-hover transition-all duration-200 group flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-primary-100 text-primary-600 flex items-center justify-center text-xl mb-4 group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-boxes-stacked"></i>
+              </div>
+              <h3 class="font-bold text-base text-charcoal-900 group-hover:text-primary-600 transition-colors">
+                Organisasi & Kepanitiaan
+              </h3>
+              <p class="text-xs text-charcoal-600 mt-2 leading-relaxed">
+                Lampu sorot, lampu RGB, kabel roll listrik, stop kontak, kabel audio, multimeter, & paket hemat.
+              </p>
+            </div>
+            <div class="mt-6 flex items-center gap-1.5 text-xs font-bold text-primary-600">
+              <span>Buka Produk</span>
+              <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         D. PRODUCT CATALOGUE (FITUR UTAMA)
+         ======================================================== -->
+    <section id="katalog" class="py-16 bg-warm-offwhite">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="max-w-3xl mb-8">
+          <div class="text-xs font-bold uppercase tracking-wider text-primary-600">Katalog Lengkap</div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-charcoal-900 tracking-tight mt-1">
+            Daftar Perlengkapan & Tarif Sewa
+          </h2>
+          <p class="text-xs sm:text-sm text-charcoal-600 mt-1">
+            Gunakan filter kategori atau kolom pencarian untuk menemukan perlengkapan yang ingin Anda sewa.
+          </p>
+        </div>
+
+        <!-- Search Bar, Filter, and Sorting Controls -->
+        <div class="bg-white p-4 rounded-2xl border border-warm-200 shadow-2xs space-y-4">
+          
+          <div class="flex flex-col md:flex-row items-center gap-3">
+            
+            <!-- Search Bar -->
+            <div class="w-full md:flex-1 relative">
+              <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-charcoal-400 text-sm"></i>
+              <input 
+                type="text" 
+                id="search-input" 
+                placeholder="Cari nama perlengkapan (misal: proyektor, mic, mixer, ht)..." 
+                class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-warm-200 bg-warm-50 focus:bg-white text-sm text-charcoal-900 focus:outline-none focus:ring-2 focus:ring-primary-500/40 focus:border-primary-500 transition-all placeholder:text-charcoal-400"
+              />
+            </div>
+
+            <!-- Sorting Select -->
+            <div class="w-full md:w-56 relative shrink-0">
+              <select id="sort-select" class="w-full pl-3.5 pr-8 py-2.5 rounded-xl border border-warm-200 bg-warm-50 focus:bg-white text-xs sm:text-sm font-semibold text-charcoal-800 focus:outline-none focus:ring-2 focus:ring-primary-500/40 transition appearance-none cursor-pointer">
+                <option value="default">Urutan: Rekomendasi</option>
+                <option value="price-asc">Harga: Terendah ke Tertinggi</option>
+                <option value="price-desc">Harga: Tertinggi ke Terendah</option>
+                <option value="name-asc">Nama Produk (A-Z)</option>
+              </select>
+              <i class="fa-solid fa-arrow-down-short-wide absolute right-3.5 top-1/2 -translate-y-1/2 text-charcoal-500 pointer-events-none text-xs"></i>
+            </div>
+
+          </div>
+
+          <!-- Category Filter Tabs -->
+          <div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none" id="catalog-category-tabs">
+            <button class="cat-filter-btn active-tab px-3.5 py-1.5 rounded-lg text-xs font-bold transition whitespace-nowrap bg-primary-600 text-white" data-cat="all">
+              Semua (42)
+            </button>
+            <button class="cat-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold transition whitespace-nowrap bg-warm-100 text-charcoal-700 hover:bg-warm-200" data-cat="audio-sound">
+              Sound System & Audio
+            </button>
+            <button class="cat-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold transition whitespace-nowrap bg-warm-100 text-charcoal-700 hover:bg-warm-200" data-cat="mikrofon-acc">
+              Mikrofon & Stand
+            </button>
+            <button class="cat-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold transition whitespace-nowrap bg-warm-100 text-charcoal-700 hover:bg-warm-200" data-cat="proyektor-multimedia">
+              Proyektor & Multimedia
+            </button>
+            <button class="cat-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold transition whitespace-nowrap bg-warm-100 text-charcoal-700 hover:bg-warm-200" data-cat="ht-komunikasi">
+              HT & Komunikasi
+            </button>
+            <button class="cat-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold transition whitespace-nowrap bg-warm-100 text-charcoal-700 hover:bg-warm-200" data-cat="lighting-listrik">
+              Lighting & Listrik
+            </button>
+            <button class="cat-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold transition whitespace-nowrap bg-warm-100 text-charcoal-700 hover:bg-warm-200" data-cat="paket-hemat">
+              Paket Hemat
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Products Grid Container -->
+        <div id="catalog-grid" class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+          <!-- Rendered dynamically -->
+        </div>
+
+        <!-- Empty State (Informative) -->
+        <div id="catalog-empty-state" class="hidden text-center py-16 bg-white rounded-2xl border border-warm-200 mt-8">
+          <div class="w-14 h-14 rounded-full bg-warm-100 text-charcoal-400 flex items-center justify-center text-2xl mx-auto mb-3">
+            <i class="fa-solid fa-box-open"></i>
+          </div>
+          <h3 class="text-base font-bold text-charcoal-900">Perlengkapan Tidak Ditemukan</h3>
+          <p class="text-xs text-charcoal-600 mt-1 max-w-sm mx-auto">
+            Tidak ada perlengkapan yang sesuai dengan kata kunci pencarian atau filter yang dipilih.
+          </p>
+          <button onclick="resetCatalogue()" class="mt-4 px-4 py-2 bg-primary-600 text-white text-xs font-bold rounded-xl hover:bg-primary-700 transition">
+            Reset Pencarian & Filter
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         H. ABOUT SECTION & WORKFLOW
+         ======================================================== -->
+    <section id="tentang" class="py-16 bg-white border-y border-warm-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <div class="lg:col-span-5 space-y-4">
+            <div class="text-xs font-bold uppercase tracking-wider text-primary-600">Tentang Ahli Perkap Malang</div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-charcoal-900 tracking-tight">
+              Penyedia Rental Perlengkapan Acara yang Mudah & Transparan
+            </h2>
+            <p class="text-xs sm:text-sm text-charcoal-700 leading-relaxed">
+              Ahli Perkap Malang hadir untuk membantu kepanitiaan acara kampus, organisasi, komunitas, dan masyarakat umum dalam melengkapi kebutuhan teknis seperti sound system, proyektor, handy talky, dan kelistrikan tanpa prosedur yang rumit.
+            </p>
+            <p class="text-xs sm:text-sm text-charcoal-700 leading-relaxed">
+              Setiap peralatan dirawat secara berkala dan diuji sebelum diserahkan, guna meminimalkan risiko kendala teknis saat acara berlangsung.
+            </p>
+          </div>
+
+          <div class="lg:col-span-7">
+            <div class="text-xs font-bold uppercase tracking-wider text-charcoal-500 mb-4">Cara Kerja Penyewaan (3 Langkah Mudah)</div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              
+              <div class="p-5 rounded-2xl bg-warm-offwhite border border-warm-200">
+                <div class="w-10 h-10 rounded-xl bg-primary-600 text-white font-extrabold text-sm flex items-center justify-center mb-3">
+                  1
+                </div>
+                <h3 class="font-bold text-sm text-charcoal-900">Pilih Perlengkapan</h3>
+                <p class="text-xs text-charcoal-600 mt-1 leading-relaxed">
+                  Cari barang di katalog dan klik "Tambah ke Pilihan" untuk menyusun daftar kebutuhan acara Anda.
+                </p>
+              </div>
+
+              <div class="p-5 rounded-2xl bg-warm-offwhite border border-warm-200">
+                <div class="w-10 h-10 rounded-xl bg-primary-600 text-white font-extrabold text-sm flex items-center justify-center mb-3">
+                  2
+                </div>
+                <h3 class="font-bold text-sm text-charcoal-900">Isi Detail Permintaan</h3>
+                <p class="text-xs text-charcoal-600 mt-1 leading-relaxed">
+                  Lengkapi data pemesan, jadwal tanggal pemakaian, dan lokasi acara melalui formulir permintaan sewa.
+                </p>
+              </div>
+
+              <div class="p-5 rounded-2xl bg-warm-offwhite border border-warm-200">
+                <div class="w-10 h-10 rounded-xl bg-primary-600 text-white font-extrabold text-sm flex items-center justify-center mb-3">
+                  3
+                </div>
+                <h3 class="font-bold text-sm text-charcoal-900">Konfirmasi via WA</h3>
+                <p class="text-xs text-charcoal-600 mt-1 leading-relaxed">
+                  Kirim rincian permintaan langsung ke WhatsApp kami untuk konfirmasi ketersediaan barang.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         I. FAQ SECTION (ACCORDION INFORMATIF)
+         ======================================================== -->
+    <section id="faq" class="py-16 bg-warm-offwhite border-b border-warm-200">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <div class="text-xs font-bold uppercase tracking-wider text-primary-600">Tanya Jawab</div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-charcoal-900 tracking-tight mt-1">
+            Pertanyaan yang Sering Diajukan
+          </h2>
+          <p class="text-xs sm:text-sm text-charcoal-600 mt-1">
+            Informasi penting terkait proses pemesanan dan layanan Ahli Perkap Malang.
+          </p>
+        </div>
+
+        <div class="space-y-3" id="faq-accordion">
+          
+          <div class="faq-card bg-white rounded-2xl border border-warm-200 overflow-hidden shadow-2xs">
+            <button class="faq-toggle w-full px-5 py-4 text-left font-bold text-sm text-charcoal-900 flex items-center justify-between gap-4 focus:outline-none">
+              <span>Bagaimana cara menyewa perlengkapan di Ahli Perkap Malang?</span>
+              <i class="fa-solid fa-chevron-down text-primary-600 text-xs transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content px-5 pb-4 text-xs text-charcoal-700 leading-relaxed border-t border-warm-100 pt-3">
+              Pilih perlengkapan yang dibutuhkan melalui katalog website, buka keranjang "Pilihan Sewa", tentukan tanggal pemakaian dan lokasi, lalu klik "Kirim Permintaan via WhatsApp". Tim kami akan memverifikasi ketersediaan barang untuk tanggal tersebut.
+            </div>
+          </div>
+
+          <div class="faq-card bg-white rounded-2xl border border-warm-200 overflow-hidden shadow-2xs">
+            <button class="faq-toggle w-full px-5 py-4 text-left font-bold text-sm text-charcoal-900 flex items-center justify-between gap-4 focus:outline-none">
+              <span>Bagaimana cara menanyakan harga jika butuh penyesuaian khusus?</span>
+              <i class="fa-solid fa-chevron-down text-primary-600 text-xs transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content px-5 pb-4 text-xs text-charcoal-700 leading-relaxed border-t border-warm-100 pt-3">
+              Untuk kebutuhan khusus dalam jumlah banyak, durasi multi-hari, atau paket yang belum terdaftar di katalog, Anda dapat langsung menekan tombol "Konsultasi via WhatsApp" untuk berdiskusi dengan admin kami.
+            </div>
+          </div>
+
+          <div class="faq-card bg-white rounded-2xl border border-warm-200 overflow-hidden shadow-2xs">
+            <button class="faq-toggle w-full px-5 py-4 text-left font-bold text-sm text-charcoal-900 flex items-center justify-between gap-4 focus:outline-none">
+              <span>Apakah bisa menyewa beberapa jenis barang sekaligus?</span>
+              <i class="fa-solid fa-chevron-down text-primary-600 text-xs transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content px-5 pb-4 text-xs text-charcoal-700 leading-relaxed border-t border-warm-100 pt-3">
+              Bisa. Anda dapat memasukkan beberapa jenis barang (misalnya proyektor, speaker, mic wireless, dan kabel) ke dalam daftar pilihan sewa secara bersamaan sebelum mengirimkan permintaan formulir.
+            </div>
+          </div>
+
+          <div class="faq-card bg-white rounded-2xl border border-warm-200 overflow-hidden shadow-2xs">
+            <button class="faq-toggle w-full px-5 py-4 text-left font-bold text-sm text-charcoal-900 flex items-center justify-between gap-4 focus:outline-none">
+              <span>Bagaimana cara memastikan ketersediaan barang?</span>
+              <i class="fa-solid fa-chevron-down text-primary-600 text-xs transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content px-5 pb-4 text-xs text-charcoal-700 leading-relaxed border-t border-warm-100 pt-3">
+              Ketersediaan barang dipastikan melalui komunikasi langsung dengan tim kami di WhatsApp. Kami akan memeriksa jadwal pemakaian unit pada tanggal acara yang Anda ajukan.
+            </div>
+          </div>
+
+          <div class="faq-card bg-white rounded-2xl border border-warm-200 overflow-hidden shadow-2xs">
+            <button class="faq-toggle w-full px-5 py-4 text-left font-bold text-sm text-charcoal-900 flex items-center justify-between gap-4 focus:outline-none">
+              <span>Bagaimana proses konfirmasi penyewaan?</span>
+              <i class="fa-solid fa-chevron-down text-primary-600 text-xs transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content px-5 pb-4 text-xs text-charcoal-700 leading-relaxed border-t border-warm-100 pt-3">
+              Setelah rincian pesanan dikirimkan via WhatsApp, kami akan memberikan konfirmasi ketersediaan barang, kesepakatan serah terima, dan detail pembayaran. Permintaan sewa baru dianggap resmi setelah disetujui oleh admin Ahli Perkap Malang.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         J. CONTACT & FOOTER
+         ======================================================== -->
+    <section id="kontak" class="py-12 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="p-6 sm:p-8 rounded-3xl bg-charcoal-900 text-white flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="space-y-1 text-center md:text-left">
+            <div class="text-xs font-semibold text-primary-400 uppercase tracking-wider">Pusat Bantuan & Pemesanan</div>
+            <h3 class="text-xl sm:text-2xl font-extrabold">Punya Pertanyaan Seputar Kebutuhan Acara Anda?</h3>
+            <p class="text-xs text-warm-300">Tim kami siap membantu merekomendasikan perlengkapan yang tepat.</p>
+          </div>
+          <a href="https://wa.me/6281234567890?text=Halo%20Ahli%20Perkap%20Malang,%20saya%20ingin%20tanya%20sewa%20perlengkapan." target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded-xl bg-primary-600 hover:bg-primary-700 text-white font-bold text-sm flex items-center gap-2.5 transition shrink-0">
+            <i class="fa-brands fa-whatsapp text-lg text-emerald-400"></i>
+            <span>Hubungi WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-charcoal-900 text-warm-300 pt-12 pb-10 border-t border-charcoal-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-10 border-b border-charcoal-800">
+        
+        <!-- Brand Info -->
+        <div class="lg:col-span-5 space-y-3">
+          <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-lg bg-primary-600 flex items-center justify-center text-white text-sm font-bold">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <span class="text-lg font-bold text-white">Ahli Perkap <span class="text-primary-500">Malang</span></span>
+          </div>
+          <p class="text-xs text-warm-300 leading-relaxed max-w-sm">
+            Katalog penyewaan perlengkapan acara dan event equipment di Malang Raya. Membantu panitia, organisasi, dan komunitas menyewa alat dengan lebih praktis dan transparan.
+          </p>
+          <div class="text-xs text-warm-300 pt-1">
+            <i class="fa-regular fa-clock text-primary-500 mr-1.5"></i>
+            <span>Jam Layanan: 07.30 - 22.00 WIB (Setiap Hari)</span>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="lg:col-span-3 space-y-2.5">
+          <div class="text-xs font-bold text-white uppercase tracking-wider">Navigasi Website</div>
+          <ul class="space-y-1.5 text-xs">
+            <li><a href="#beranda" class="hover:text-primary-400 transition">Beranda</a></li>
+            <li><a href="#kategori" class="hover:text-primary-400 transition">Kategori Perlengkapan</a></li>
+            <li><a href="#katalog" class="hover:text-primary-400 transition">Katalog Produk</a></li>
+            <li><a href="#tentang" class="hover:text-primary-400 transition">Tentang Kami</a></li>
+            <li><a href="#faq" class="hover:text-primary-400 transition">Tanya Jawab (FAQ)</a></li>
+          </ul>
+        </div>
+
+        <!-- Categories -->
+        <div class="lg:col-span-4 space-y-2.5">
+          <div class="text-xs font-bold text-white uppercase tracking-wider">Kategori Produk</div>
+          <ul class="space-y-1.5 text-xs">
+            <li><a href="#katalog" onclick="filterByCategory('audio-sound')" class="hover:text-primary-400 transition">Sound System & Mikrofon</a></li>
+            <li><a href="#katalog" onclick="filterByCategory('proyektor-multimedia')" class="hover:text-primary-400 transition">LCD Proyektor & Layar</a></li>
+            <li><a href="#katalog" onclick="filterByCategory('ht-komunikasi')" class="hover:text-primary-400 transition">Handy Talky (HT) & Komunikasi</a></li>
+            <li><a href="#katalog" onclick="filterByCategory('lighting-listrik')" class="hover:text-primary-400 transition">Lighting, Kabel Roll & Kelistrikan</a></li>
+            <li><a href="#katalog" onclick="filterByCategory('paket-hemat')" class="hover:text-primary-400 transition">Paket Hemat Acara</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-charcoal-400 gap-3">
+        <div>
+          &copy; <span id="current-year">2026</span> <strong class="text-warm-200">Ahli Perkap Malang</strong>. All rights reserved.
+        </div>
+        <div class="text-warm-400">
+          Malang Raya, Jawa Timur
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ========================================================
+       E. PRODUCT DETAIL MODAL
+       ======================================================== -->
+  <div id="product-detail-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-charcoal-950/60 backdrop-blur-xs">
+    <div class="bg-white rounded-3xl border border-warm-200 shadow-2xl max-w-lg w-full overflow-hidden transform transition-all duration-200 scale-95 opacity-0" id="detail-modal-box">
+      
+      <!-- Modal Header -->
+      <div class="px-6 py-4 border-b border-warm-200 flex items-center justify-between">
+        <span class="text-xs font-bold uppercase tracking-wider text-primary-600" id="detail-category-badge">Kategori</span>
+        <button onclick="closeProductModal()" class="w-8 h-8 rounded-full bg-warm-100 hover:bg-warm-200 text-charcoal-700 flex items-center justify-center transition">
+          <i class="fa-solid fa-xmark text-sm"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-6 space-y-4">
+        
+        <!-- Large Visual Container -->
+        <div class="h-44 w-full rounded-2xl bg-warm-50 border border-warm-200 flex flex-col items-center justify-center text-primary-600">
+          <i id="detail-icon" class="text-5xl mb-2"></i>
+          <span class="text-[11px] font-semibold text-charcoal-500 uppercase tracking-wider">Ahli Perkap Malang</span>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-extrabold text-charcoal-900" id="detail-title">Nama Perlengkapan</h3>
+          <div class="text-lg font-extrabold text-primary-600 mt-1" id="detail-price">Rp 0 / hari</div>
+        </div>
+
+        <div class="text-xs text-charcoal-700 leading-relaxed border-t border-warm-100 pt-3" id="detail-desc">
+          Deskripsi perlengkapan.
+        </div>
+
+        <!-- Quantity Input in Modal -->
+        <div class="flex items-center justify-between border-t border-warm-100 pt-4">
+          <span class="text-xs font-bold text-charcoal-900">Jumlah Unit:</span>
+          <div class="flex items-center border border-warm-200 rounded-xl overflow-hidden bg-warm-50">
+            <button id="modal-qty-minus" class="px-3 py-1.5 bg-warm-100 hover:bg-warm-200 text-charcoal-800 text-xs font-bold transition">
+              <i class="fa-solid fa-minus"></i>
+            </button>
+            <input type="number" id="modal-qty-input" value="1" min="1" max="100" class="w-12 text-center py-1.5 bg-transparent text-xs font-bold text-charcoal-900 focus:outline-none" />
+            <button id="modal-qty-plus" class="px-3 py-1.5 bg-warm-100 hover:bg-warm-200 text-charcoal-800 text-xs font-bold transition">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="px-6 py-4 bg-warm-50 border-t border-warm-200 flex gap-2.5">
+        <button id="modal-add-btn" class="flex-1 py-3 rounded-xl bg-primary-600 hover:bg-primary-700 text-white font-bold text-xs shadow-sm transition flex items-center justify-center gap-2">
+          <i class="fa-solid fa-plus"></i>
+          <span>Tambah ke Pilihan</span>
+        </button>
+        <button id="modal-wa-btn" class="px-4 py-3 rounded-xl border border-charcoal-700/20 bg-white hover:bg-warm-100 text-charcoal-800 font-bold text-xs transition flex items-center justify-center gap-1.5">
+          <i class="fa-brands fa-whatsapp text-emerald-600 text-sm"></i>
+          <span>Tanya CS</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ========================================================
+       F. RENTAL SELECTION DRAWER (DAFTAR PILIHAN / KERANJANG)
+       ======================================================== -->
+  <div id="cart-drawer-backdrop" class="fixed inset-0 z-50 hidden bg-charcoal-950/50 backdrop-blur-2xs transition-opacity">
+    <div id="cart-drawer" class="fixed top-0 right-0 h-full w-full max-w-md bg-white shadow-drawer flex flex-col justify-between transform translate-x-full transition-transform duration-300">
+      
+      <!-- Drawer Header -->
+      <div class="px-5 py-4 border-b border-warm-200 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-primary-100 text-primary-600 flex items-center justify-center text-sm font-bold">
+            <i class="fa-solid fa-clipboard-check"></i>
+          </div>
+          <div>
+            <h3 class="font-extrabold text-base text-charcoal-900 leading-none">Daftar Barang Pilihan</h3>
+            <span class="text-[11px] text-charcoal-500 font-medium" id="cart-items-summary">0 jenis perlengkapan dipilih</span>
+          </div>
+        </div>
+        <button id="close-cart-btn" class="w-8 h-8 rounded-full bg-warm-100 hover:bg-warm-200 text-charcoal-700 flex items-center justify-center transition">
+          <i class="fa-solid fa-xmark text-sm"></i>
+        </button>
+      </div>
+
+      <!-- Drawer Items List -->
+      <div class="flex-1 overflow-y-auto p-5 space-y-3" id="cart-items-container">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <!-- Drawer Empty State -->
+      <div id="cart-empty-view" class="hidden flex-1 flex flex-col items-center justify-center p-8 text-center">
+        <div class="w-16 h-16 rounded-full bg-warm-100 text-charcoal-400 flex items-center justify-center text-3xl mb-3">
+          <i class="fa-solid fa-clipboard-list"></i>
+        </div>
+        <h4 class="font-bold text-sm text-charcoal-900">Belum Ada Barang Dipilih</h4>
+        <p class="text-xs text-charcoal-500 mt-1 max-w-xs">
+          Silakan buka katalog dan pilih perlengkapan acara yang ingin Anda sewa.
+        </p>
+        <button onclick="closeCartDrawer()" class="mt-4 px-4 py-2 bg-primary-600 text-white font-bold text-xs rounded-xl hover:bg-primary-700 transition">
+          Kembali ke Katalog
+        </button>
+      </div>
+
+      <!-- Drawer Footer with Subtotal and Checkout Button -->
+      <div id="cart-footer-view" class="p-5 border-t border-warm-200 bg-warm-50 space-y-3">
+        <div class="flex items-center justify-between text-xs">
+          <span class="text-charcoal-600 font-medium">Estimasi Subtotal / Hari:</span>
+          <span class="font-extrabold text-primary-600 text-lg" id="cart-subtotal-val">Rp 0</span>
+        </div>
+        <button onclick="openBookingFormModal()" class="w-full py-3.5 rounded-xl bg-primary-600 hover:bg-primary-700 text-white font-bold text-sm shadow-sm transition flex items-center justify-center gap-2">
+          <span>Lanjutkan Permintaan Sewa</span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ========================================================
+       G. RENTAL REQUEST FORM MODAL (FORMULIR PERMINTAAN SEWA)
+       ======================================================== -->
+  <div id="booking-form-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-charcoal-950/60 backdrop-blur-xs overflow-y-auto">
+    <div class="bg-white rounded-3xl border border-warm-200 shadow-2xl max-w-lg w-full my-8 overflow-hidden transform transition-all duration-200 scale-95 opacity-0" id="booking-modal-box">
+      
+      <!-- Modal Header -->
+      <div class="px-6 py-4 border-b border-warm-200 flex items-center justify-between">
+        <div>
+          <div class="text-[11px] font-bold uppercase tracking-wider text-primary-600">Formulir Penyewaan</div>
+          <h3 class="text-lg font-extrabold text-charcoal-900">Detail Permintaan Sewa</h3>
+        </div>
+        <button onclick="closeBookingModal()" class="w-8 h-8 rounded-full bg-warm-100 hover:bg-warm-200 text-charcoal-700 flex items-center justify-center transition">
+          <i class="fa-solid fa-xmark text-sm"></i>
+        </button>
+      </div>
+
+      <!-- Form Content -->
+      <form id="rental-request-form" class="p-6 space-y-4">
+        
+        <!-- Selected Items Summary Snippet -->
+        <div class="p-3.5 rounded-xl bg-warm-50 border border-warm-200 text-xs">
+          <div class="font-bold text-charcoal-900 mb-1 flex items-center justify-between">
+            <span>Barang yang dipilih:</span>
+            <span class="text-primary-600 font-extrabold" id="form-item-count">0 Barang</span>
+          </div>
+          <div class="text-charcoal-600 line-clamp-2" id="form-item-names">-</div>
+        </div>
+
+        <!-- 1. Nama Penyewa -->
+        <div>
+          <label for="form-name" class="block text-xs font-bold text-charcoal-900 mb-1">
+            Nama Lengkap / Nama Panitia <span class="text-red-500">*</span>
+          </label>
+          <input 
+            type="text" 
+            id="form-name" 
+            required 
+            placeholder="Contoh: Dimas Pratama (BEM)" 
+            class="w-full px-3.5 py-2.5 rounded-xl border border-warm-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/30 text-xs text-charcoal-900 focus:outline-none transition"
+          />
+        </div>
+
+        <!-- 2. Nomor WhatsApp -->
+        <div>
+          <label for="form-phone" class="block text-xs font-bold text-charcoal-900 mb-1">
+            Nomor WhatsApp Aktif <span class="text-red-500">*</span>
+          </label>
+          <input 
+            type="tel" 
+            id="form-phone" 
+            required 
+            placeholder="Contoh: 081234567890" 
+            class="w-full px-3.5 py-2.5 rounded-xl border border-warm-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/30 text-xs text-charcoal-900 focus:outline-none transition"
+          />
+        </div>
+
+        <!-- 3. Tanggal Sewa (Mulai & Selesai) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label for="form-start-date" class="block text-xs font-bold text-charcoal-900 mb-1">
+              Tanggal Mulai Sewa <span class="text-red-500">*</span>
+            </label>
+            <input 
+              type="date" 
+              id="form-start-date" 
+              required 
+              class="w-full px-3.5 py-2.5 rounded-xl border border-warm-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/30 text-xs text-charcoal-900 focus:outline-none transition"
+            />
+          </div>
+          <div>
+            <label for="form-end-date" class="block text-xs font-bold text-charcoal-900 mb-1">
+              Tanggal Selesai Sewa <span class="text-red-500">*</span>
+            </label>
+            <input 
+              type="date" 
+              id="form-end-date" 
+              required 
+              class="w-full px-3.5 py-2.5 rounded-xl border border-warm-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/30 text-xs text-charcoal-900 focus:outline-none transition"
+            />
+          </div>
+        </div>
+        <p id="date-error" class="hidden text-[11px] text-red-600 font-semibold">
+          *Tanggal selesai tidak boleh lebih awal daripada tanggal mulai sewa.
+        </p>
+
+        <!-- 4. Lokasi Acara -->
+        <div>
+          <label for="form-location" class="block text-xs font-bold text-charcoal-900 mb-1">
+            Lokasi Acara / Kecamatan di Malang <span class="text-red-500">*</span>
+          </label>
+          <input 
+            type="text" 
+            id="form-location" 
+            required 
+            placeholder="Contoh: Gedung Widyaloka UB / Dinoyo, Lowokwaru" 
+            class="w-full px-3.5 py-2.5 rounded-xl border border-warm-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/30 text-xs text-charcoal-900 focus:outline-none transition"
+          />
+        </div>
+
+        <!-- 5. Catatan Tambahan (Opsional) -->
+        <div>
+          <label for="form-notes" class="block text-xs font-bold text-charcoal-900 mb-1">
+            Catatan Tambahan (Opsional)
+          </label>
+          <textarea 
+            id="form-notes" 
+            rows="2" 
+            placeholder="Kebutuhan khusus atau keterangan tambahan..." 
+            class="w-full px-3.5 py-2 rounded-xl border border-warm-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/30 text-xs text-charcoal-900 focus:outline-none transition"
+          ></textarea>
+        </div>
+
+        <!-- Notice: Tidak mengklaim konfirmasi otomatis -->
+        <div class="p-3 rounded-xl bg-primary-50 border border-primary-200 text-[11px] text-primary-900 flex items-start gap-2">
+          <i class="fa-solid fa-circle-info text-primary-600 mt-0.5 shrink-0"></i>
+          <span>
+            <strong>Catatan:</strong> Permintaan sewa ini akan diteruskan ke WhatsApp admin. Pesanan belum resmi terkonfirmasi sebelum pihak Ahli Perkap Malang memeriksa ketersediaan alat dan memberikan konfirmasi balasan.
+          </span>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="pt-2">
+          <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-700 hover:to-emerald-600 text-white font-bold text-sm shadow-sm transition flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>Kirim Permintaan via WhatsApp</span>
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+
+  <!-- ========================================================
+       TOAST FEEDBACK COMPONENT
+       ======================================================== -->
+  <div id="toast-container" class="fixed top-24 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+
+  <!-- ========================================================
+       JAVASCRIPT: LOGIKA KATALOG, KERANJANG, & WHATSAPP
+       ======================================================== -->
+  <script>
+    // 42 DATA RESMI PERLENGKAPAN DARI PENGGUNA
+    const inventoryData = [
+      // Proyektor & Multimedia
+      { id: 'lcd-proyektor', name: 'LCD Proyektor', price: 80000, category: 'proyektor-multimedia', categoryLabel: 'Proyektor & Multimedia', icon: 'fa-solid fa-video', desc: 'LCD Proyektor tampilan terang & tajam, siap input HDMI dan VGA untuk presentasi seminar.' },
+      { id: 'layar-proyektor', name: 'Layar Proyektor', price: 30000, category: 'proyektor-multimedia', categoryLabel: 'Proyektor & Multimedia', icon: 'fa-solid fa-tv', desc: 'Layar screen proyektor tripod portabel, bahan kain matte white bersih dan kokoh.' },
+      { id: 'konverter-hdmi-vga', name: 'Konverter HDMI to VGA', price: 5000, category: 'proyektor-multimedia', categoryLabel: 'Proyektor & Multimedia', icon: 'fa-solid fa-arrows-split-up-and-left', desc: 'Adaptor konverter dari port HDMI laptop ke colokan VGA proyektor.' },
+      { id: 'kabel-hdmi', name: 'Kabel HDMI to HDMI', price: 10000, category: 'proyektor-multimedia', categoryLabel: 'Proyektor & Multimedia', icon: 'fa-solid fa-plug', desc: 'Kabel HDMI high definition transmisi gambar tajam tanpa delay.' },
+      { id: 'kabel-vga', name: 'kabel VGA', price: 10000, category: 'proyektor-multimedia', categoryLabel: 'Proyektor & Multimedia', icon: 'fa-solid fa-plug', desc: 'Kabel display VGA standar male to male berkualitas.' },
+      { id: 'vga-splitter', name: 'VGA Splitter', price: 20000, category: 'proyektor-multimedia', categoryLabel: 'Proyektor & Multimedia', icon: 'fa-solid fa-code-fork', desc: 'Splitter pembagi tampilan visual dari 1 laptop ke 2-4 layar proyektor.' },
+      { id: 'splitter-vga-alt', name: 'Splitter VGA', price: 20000, category: 'proyektor-multimedia', categoryLabel: 'Proyektor & Multimedia', icon: 'fa-solid fa-code-fork', desc: 'Alat cabang display video VGA untuk presentasi multi-screen.' },
+
+      // Sound System & Audio
+      { id: 'sound-portable-mic', name: 'Sound Portable + Mic', price: 100000, category: 'audio-sound', categoryLabel: 'Sound System & Audio', icon: 'fa-solid fa-volume-high', desc: 'Speaker trolley portabel praktis lengkap dengan mic, baterai awet untuk rapat & outbound.' },
+      { id: 'sound-aktif', name: 'Sound Aktif', price: 75000, category: 'audio-sound', categoryLabel: 'Sound System & Audio', icon: 'fa-solid fa-volume-high', desc: 'Speaker aktif bertenaga internal amplifier, output audio tebal dan jernih.' },
+      { id: 'sound-pasif', name: 'Sound Pasif', price: 50000, category: 'audio-sound', categoryLabel: 'Sound System & Audio', icon: 'fa-solid fa-volume-low', desc: 'Speaker pasif pelengkap tata suara panggung acara.' },
+      { id: 'sound-aktif-pasif', name: 'Sound Aktif+Pasif', price: 120000, category: 'audio-sound', categoryLabel: 'Sound System & Audio', icon: 'fa-solid fa-volume-high', desc: 'Kombinasi 1 speaker aktif + 1 speaker pasif untuk sebaran suara merata.' },
+      { id: 'power-mixer-6ch', name: 'Power Mixer 6 Chanel', price: 75000, category: 'audio-sound', categoryLabel: 'Sound System & Audio', icon: 'fa-solid fa-sliders', desc: 'Mixer audio 6 channel bertenaga dengan equalizer & efek suara panggung.' },
+      { id: 'power-mixer-4ch', name: 'Power Mixer 4 Chanel', price: 65000, category: 'audio-sound', categoryLabel: 'Sound System & Audio', icon: 'fa-solid fa-sliders', desc: 'Mixer kompak 4 channel untuk kendali audio seminar dan musik akustik.' },
+      { id: 'sound-card', name: 'Sound Card', price: 10000, category: 'audio-sound', categoryLabel: 'Sound System & Audio', icon: 'fa-solid fa-microchip', desc: 'Audio interface soundcard untuk input suara jernih rekaman atau streaming laptop.' },
+      { id: 'soundcard-alt', name: 'Soundcard', price: 10000, category: 'audio-sound', categoryLabel: 'Sound System & Audio', icon: 'fa-solid fa-microchip', desc: 'Kartu suara eksternal untuk routing audio bebas noise.' },
+
+      // Mikrofon & Stand
+      { id: 'mic-wireless', name: 'Mic Wireless', price: 30000, category: 'mikrofon-acc', categoryLabel: 'Mikrofon & Stand', icon: 'fa-solid fa-microphone', desc: 'Mikrofon nirkabel jangkauan luas tanpa hambatan kabel untuk MC dan narasumber.' },
+      { id: 'mic-tanpa-kabel', name: 'Mic Tanpa Kabel', price: 7000, category: 'mikrofon-acc', categoryLabel: 'Mikrofon & Stand', icon: 'fa-solid fa-microphone', desc: 'Mikrofon wireless ekonomis untuk kebutuhan vokal dan pembicara.' },
+      { id: 'ear-mic', name: 'Ear Mic', price: 50000, category: 'mikrofon-acc', categoryLabel: 'Mikrofon & Stand', icon: 'fa-solid fa-headset', desc: 'Mikrofon bando telinga (headset clip on) fleksibel bebas gerak untuk presenter aktif.' },
+      { id: 'mic-kabel-3m', name: 'Mic Kabel 3 Meter', price: 10000, category: 'mikrofon-acc', categoryLabel: 'Mikrofon & Stand', icon: 'fa-solid fa-microphone-lines', desc: 'Mikrofon kabel vokal handal panjang 3 meter dengan kepekaan suara baik.' },
+      { id: 'stand-mic-panjang', name: 'Stand Mic Panjang', price: 10000, category: 'mikrofon-acc', categoryLabel: 'Mikrofon & Stand', icon: 'fa-solid fa-arrows-up-down', desc: 'Stand mic tiang tinggi dengan boom arm fleksibel untuk posisi berdiri.' },
+      { id: 'stand-mic-pendek', name: 'Stand Mic Pendek', price: 10000, category: 'mikrofon-acc', categoryLabel: 'Mikrofon & Stand', icon: 'fa-solid fa-arrows-up-down', desc: 'Stand mic meja kokoh untuk rapat meja pimpinan atau miking instrumen.' },
+      { id: 'spliter-mic', name: 'Spliter Mic', price: 15000, category: 'mikrofon-acc', categoryLabel: 'Mikrofon & Stand', icon: 'fa-solid fa-share-nodes', desc: 'Splitter audio untuk membagi input mikrofon ganda ke mixer.' },
+
+      // HT & Komunikasi
+      { id: 'handy-talky', name: 'Handy Talky', price: 12000, category: 'ht-komunikasi', categoryLabel: 'HT & Komunikasi', icon: 'fa-solid fa-walkie-talkie', desc: 'Handy Talky (HT) komunikasi panitia dual-band sinyal tembus jauh include charger.' },
+      { id: 'megaphone', name: 'Megaphone', price: 30000, category: 'ht-komunikasi', categoryLabel: 'HT & Komunikasi', icon: 'fa-solid fa-bullhorn', desc: 'Pengeras suara megaphone genggam bertenaga dengan fungsi sirine lapangan.' },
+      { id: 'toa-megaphone-alt', name: 'Toa/Megaphone', price: 30000, category: 'ht-komunikasi', categoryLabel: 'HT & Komunikasi', icon: 'fa-solid fa-bullhorn', desc: 'Toa pengarah massa suara nyaring untuk koordinator lapangan.' },
+
+      // Lighting, Kabel & Kelistrikan
+      { id: 'lampu-sorot-100w', name: 'Lampu Sorot 100 Watt', price: 40000, category: 'lighting-listrik', categoryLabel: 'Lighting & Listrik', icon: 'fa-solid fa-lightbulb', desc: 'Lampu tembak sorot 100W terang untuk penerangan panggung dan venue malam.' },
+      { id: 'lampu-rgb-bulat', name: 'Lampu RGB Bulat', price: 40000, category: 'lighting-listrik', categoryLabel: 'Lighting & Listrik', icon: 'fa-solid fa-circle-dot', desc: 'Lampu sorot panggung RGB bulat dengan variasi warna animasi cerah.' },
+      { id: 'lampu-rgb-kotak', name: 'Lampu RGB Kotak', price: 30000, category: 'lighting-listrik', categoryLabel: 'Lighting & Listrik', icon: 'fa-solid fa-square', desc: 'Lampu sorot RGB kotak untuk pewarnaan backdrop dan dinding acara.' },
+      { id: 'kabel-roll', name: 'Kabel Roll', price: 7000, category: 'lighting-listrik', categoryLabel: 'Lighting & Listrik', icon: 'fa-solid fa-dharmachakra', desc: 'Kabel gulung roll panjang tebal aman untuk distribusi aliran listrik.' },
+      { id: 'stop-kontak', name: 'Stop Kontak', price: 7000, category: 'lighting-listrik', categoryLabel: 'Lighting & Listrik', icon: 'fa-solid fa-plug-circle-bolt', desc: 'Stop kontak cabang ekstensi multi lubang dengan pengaman.' },
+      { id: 'multimeter-digital', name: 'Multimeter Digital', price: 15000, category: 'lighting-listrik', categoryLabel: 'Lighting & Listrik', icon: 'fa-solid fa-gauge-high', desc: 'Tester multimeter digital untuk uji tegangan dan kestabilan arus listrik venue.' },
+      { id: 'kabel-mic-10m', name: 'Kabel Mic 10 Meter', price: 10000, category: 'lighting-listrik', categoryLabel: 'Lighting & Listrik', icon: 'fa-solid fa-lines-leaning', desc: 'Kabel audio XLR mikrofon panjang 10 meter bebas distorsi suara.' },
+      { id: 'kabel-gitar-5m', name: 'Kabel Gitar 5 Meter Jack to Akai', price: 10000, category: 'lighting-listrik', categoryLabel: 'Lighting & Listrik', icon: 'fa-solid fa-guitar', desc: 'Kabel instrumen jack akai mono tebal untuk gitar, bass, atau keyboard.' },
+      { id: 'kabel-audio-5m-rca', name: 'Kabel Audio 5 Meter Jack 3,5mm to RCA Male', price: 10000, category: 'lighting-listrik', categoryLabel: 'Lighting & Listrik', icon: 'fa-solid fa-headphones', desc: 'Kabel aux hp/laptop ke colokan input mixer atau speaker RCA.' },
+      { id: 'kabel-jack-hp-sound', name: 'Kabel Jack HP/Laptop to Sound', price: 10000, category: 'lighting-listrik', categoryLabel: 'Lighting & Listrik', icon: 'fa-solid fa-mobile-screen', desc: 'Kabel sambungan pemutar musik smartphone/laptop langsung ke audio.' },
+      { id: 'kabel-audio-to-mixer', name: 'Kabel Audio To MIxer', price: 10000, category: 'lighting-listrik', categoryLabel: 'Lighting & Listrik', icon: 'fa-solid fa-sliders', desc: 'Kabel interkoneksi audio berkualitas untuk rute sinyal ke mixer.' },
+      { id: 'konverter-audio-xlr', name: 'Konverter Audio Jack to XLR', price: 3000, category: 'lighting-listrik', categoryLabel: 'Lighting & Listrik', icon: 'fa-solid fa-circle-nodes', desc: 'Adaptor jack 6.5mm ke socket XLR canon audio.' },
+      { id: 'konverter-audio-35', name: 'Konverter Audio Jack 3,5 mm', price: 5000, category: 'lighting-listrik', categoryLabel: 'Lighting & Listrik', icon: 'fa-solid fa-circle-nodes', desc: 'Adaptor konverter audio jack 3.5mm ke 6.5mm akai.' },
+
+      // Paket Hemat
+      { id: 'paket-lcd-layar', name: 'Paket LCD+Layar', price: 100000, category: 'paket-hemat', categoryLabel: 'Paket Hemat', icon: 'fa-solid fa-photo-film', desc: 'Paket hemat presentasi: 1 unit LCD Proyektor + 1 unit Layar Tripod.' },
+      { id: 'paket-sound-aktif-pasif', name: 'Paket Sound Aktif + Pasif', price: 120000, category: 'paket-hemat', categoryLabel: 'Paket Hemat', icon: 'fa-solid fa-volume-high', desc: 'Bundling speaker aktif dan pasif berdaya seimbang untuk acara mini.' },
+      { id: 'paket-sound-system', name: 'Paket Sound System', price: 270000, category: 'paket-hemat', categoryLabel: 'Paket Hemat', icon: 'fa-solid fa-sliders', desc: 'Paket komplit: Speaker, Power Mixer, Mic Wireless, dan Kabel.' },
+      { id: 'paket-sound-system-komplit', name: 'Paket Sound System Komplit', price: 500000, category: 'paket-hemat', categoryLabel: 'Paket Hemat', icon: 'fa-solid fa-music', desc: 'Paket panggung lengkap: Speaker Aktif+Pasif, Mixer, Mic & Stand, Full Kabel.' }
+    ];
+
+    // STATE MANAGEMENT (RENTAL CART)
+    let rentalCart = []; // array of { id, name, price, qty, icon, categoryLabel }
+    let currentCategory = 'all';
+    let currentSort = 'default';
+    let searchQuery = '';
+
+    // UTILITY: FORMAT RUPIAH
+    function formatRupiah(num) {
+      return 'Rp ' + Number(num).toLocaleString('id-ID');
+    }
+
+    // 1. INITIALIZE & RENDER CATALOGUE
+    function getFilteredProducts() {
+      let list = inventoryData.filter(item => {
+        const matchCategory = (currentCategory === 'all' || item.category === currentCategory);
+        const matchQuery = (searchQuery === '' || item.name.toLowerCase().includes(searchQuery));
+        return matchCategory && matchQuery;
+      });
+
+      // Sorting
+      if (currentSort === 'price-asc') {
+        list.sort((a, b) => a.price - b.price);
+      } else if (currentSort === 'price-desc') {
+        list.sort((a, b) => b.price - a.price);
+      } else if (currentSort === 'name-asc') {
+        list.sort((a, b) => a.name.localeCompare(b.name));
+      }
+
+      return list;
+    }
+
+    function renderCatalogue() {
+      const grid = document.getElementById('catalog-grid');
+      const emptyState = document.getElementById('catalog-empty-state');
+      if (!grid) return;
+
+      const products = getFilteredProducts();
+
+      if (products.length === 0) {
+        grid.innerHTML = '';
+        if (emptyState) emptyState.classList.remove('hidden');
+        return;
+      }
+
+      if (emptyState) emptyState.classList.add('hidden');
+      grid.innerHTML = '';
+
+      products.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'product-card bg-white rounded-2xl border border-warm-200 p-4 sm:p-5 shadow-2xs hover:shadow-card-hover hover:border-primary-300 transition-all duration-200 flex flex-col justify-between group';
+
+        card.innerHTML = `
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-warm-100 text-charcoal-700">
+                ${item.categoryLabel}
+              </span>
+              <span class="text-[10px] text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded font-semibold border border-emerald-200">
+                Tersedia
+              </span>
+            </div>
+
+            <!-- Product Visual -->
+            <div class="h-32 w-full rounded-xl bg-warm-50 border border-warm-200 flex items-center justify-center text-primary-600 mb-3.5 group-hover:bg-primary-50 transition-colors">
+              <i class="${item.icon} text-3xl"></i>
+            </div>
+
+            <h3 class="font-bold text-sm text-charcoal-900 group-hover:text-primary-600 transition-colors leading-snug">
+              ${item.name}
+            </h3>
+            <p class="text-[11px] text-charcoal-600 mt-1 line-clamp-2 leading-relaxed">
+              ${item.desc}
+            </p>
+          </div>
+
+          <div class="mt-4 pt-3 border-t border-warm-100">
+            <div class="flex items-baseline justify-between mb-3">
+              <span class="text-[10px] text-charcoal-500">Harga Sewa:</span>
+              <span class="font-extrabold text-primary-600 text-sm">
+                ${formatRupiah(item.price)}<span class="text-[10px] font-normal text-charcoal-500"> / hari</span>
+              </span>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2">
+              <button onclick="openProductModal('${item.id}')" class="py-2 px-2.5 rounded-xl border border-warm-200 hover:bg-warm-100 text-charcoal-800 text-xs font-semibold transition text-center">
+                Lihat Detail
+              </button>
+              <button onclick="addToCart('${item.id}')" class="py-2 px-2.5 rounded-xl bg-primary-600 hover:bg-primary-700 text-white text-xs font-bold transition text-center flex items-center justify-center gap-1">
+                <i class="fa-solid fa-plus text-[10px]"></i>
+                <span>Pilih</span>
+              </button>
+            </div>
+          </div>
+        `;
+
+        grid.appendChild(card);
+      });
+    }
+
+    // 2. FILTER & SEARCH HANDLERS
+    window.filterByCategory = function(category) {
+      currentCategory = category;
+      const tabs = document.querySelectorAll('.cat-filter-btn');
+      tabs.forEach(tab => {
+        if (tab.getAttribute('data-cat') === category) {
+          tab.className = 'cat-filter-btn active-tab px-3.5 py-1.5 rounded-lg text-xs font-bold transition whitespace-nowrap bg-primary-600 text-white';
+        } else {
+          tab.className = 'cat-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold transition whitespace-nowrap bg-warm-100 text-charcoal-700 hover:bg-warm-200';
+        }
+      });
+
+      renderCatalogue();
+
+      // Smooth scroll to catalogue section
+      const catalogEl = document.getElementById('katalog');
+      if (catalogEl) {
+        catalogEl.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
+    window.resetCatalogue = function() {
+      const searchInput = document.getElementById('search-input');
+      const sortSelect = document.getElementById('sort-select');
+      if (searchInput) searchInput.value = '';
+      if (sortSelect) sortSelect.value = 'default';
+      searchQuery = '';
+      currentSort = 'default';
+      filterByCategory('all');
+    };
+
+    // 3. CART OPERATIONS
+    function updateCartUI() {
+      const badge = document.getElementById('cart-badge');
+      const container = document.getElementById('cart-items-container');
+      const emptyView = document.getElementById('cart-empty-view');
+      const footerView = document.getElementById('cart-footer-view');
+      const summaryText = document.getElementById('cart-items-summary');
+      const subtotalVal = document.getElementById('cart-subtotal-val');
+
+      const totalItems = rentalCart.reduce((sum, item) => sum + item.qty, 0);
+      if (badge) badge.textContent = totalItems;
+
+      if (summaryText) {
+        summaryText.textContent = `${rentalCart.length} jenis perlengkapan (${totalItems} unit)`;
+      }
+
+      if (rentalCart.length === 0) {
+        if (container) container.innerHTML = '';
+        if (emptyView) emptyView.classList.remove('hidden');
+        if (footerView) footerView.classList.add('hidden');
+        return;
+      }
+
+      if (emptyView) emptyView.classList.add('hidden');
+      if (footerView) footerView.classList.remove('hidden');
+
+      if (container) {
+        container.innerHTML = '';
+        let subtotal = 0;
+
+        rentalCart.forEach(item => {
+          const itemTotal = item.price * item.qty;
+          subtotal += itemTotal;
+
+          const row = document.createElement('div');
+          row.className = 'p-3 rounded-xl bg-warm-50 border border-warm-200 flex items-center justify-between gap-3';
+          row.innerHTML = `
+            <div class="flex items-center gap-2.5 min-w-0">
+              <div class="w-9 h-9 rounded-lg bg-white border border-warm-200 flex items-center justify-center text-primary-600 shrink-0">
+                <i class="${item.icon} text-sm"></i>
+              </div>
+              <div class="min-w-0">
+                <div class="font-bold text-xs text-charcoal-900 truncate">${item.name}</div>
+                <div class="text-[11px] text-charcoal-600">${formatRupiah(item.price)} / hari</div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2 shrink-0">
+              <div class="flex items-center border border-warm-200 rounded-lg bg-white overflow-hidden text-xs">
+                <button onclick="changeCartQty('${item.id}', -1)" class="px-2 py-1 bg-warm-100 hover:bg-warm-200 text-charcoal-700 font-bold transition">
+                  <i class="fa-solid fa-minus text-[10px]"></i>
+                </button>
+                <span class="w-7 text-center font-bold text-charcoal-900">${item.qty}</span>
+                <button onclick="changeCartQty('${item.id}', 1)" class="px-2 py-1 bg-warm-100 hover:bg-warm-200 text-charcoal-700 font-bold transition">
+                  <i class="fa-solid fa-plus text-[10px]"></i>
+                </button>
+              </div>
+
+              <button onclick="removeFromCart('${item.id}')" class="w-7 h-7 rounded-lg text-charcoal-400 hover:text-red-600 hover:bg-red-50 flex items-center justify-center transition" title="Hapus">
+                <i class="fa-regular fa-trash-can text-xs"></i>
+              </button>
+            </div>
+          `;
+          container.appendChild(row);
+        });
+
+        if (subtotalVal) {
+          subtotalVal.textContent = formatRupiah(subtotal);
+        }
+      }
+    }
+
+    window.addToCart = function(id, qty = 1) {
+      const product = inventoryData.find(item => item.id === id);
+      if (!product) return;
+
+      const existingIndex = rentalCart.findIndex(item => item.id === id);
+      if (existingIndex > -1) {
+        rentalCart[existingIndex].qty += qty;
+      } else {
+        rentalCart.push({
+          id: product.id,
+          name: product.name,
+          price: product.price,
+          qty: qty,
+          icon: product.icon,
+          categoryLabel: product.categoryLabel
+        });
+      }
+
+      updateCartUI();
+      showToast(`"${product.name}" ditambahkan ke pilihan (${qty} unit)`, 'success');
+    };
+
+    window.changeCartQty = function(id, delta) {
+      const index = rentalCart.findIndex(item => item.id === id);
+      if (index === -1) return;
+
+      rentalCart[index].qty += delta;
+      if (rentalCart[index].qty <= 0) {
+        rentalCart.splice(index, 1);
+        showToast('Barang dihapus dari daftar pilihan', 'info');
+      }
+      updateCartUI();
+    };
+
+    window.removeFromCart = function(id) {
+      const index = rentalCart.findIndex(item => item.id === id);
+      if (index > -1) {
+        const name = rentalCart[index].name;
+        rentalCart.splice(index, 1);
+        updateCartUI();
+        showToast(`"${name}" dihapus dari pilihan`, 'info');
+      }
+    };
+
+    // 4. CART DRAWER TOGGLE
+    const cartBackdrop = document.getElementById('cart-drawer-backdrop');
+    const cartDrawer = document.getElementById('cart-drawer');
+    const openCartBtn = document.getElementById('open-cart-btn');
+    const closeCartBtn = document.getElementById('close-cart-btn');
+
+    function openCartDrawer() {
+      if (cartBackdrop && cartDrawer) {
+        cartBackdrop.classList.remove('hidden');
+        requestAnimationFrame(() => {
+          cartDrawer.classList.remove('translate-x-full');
+        });
+      }
+    }
+
+    window.closeCartDrawer = function() {
+      if (cartBackdrop && cartDrawer) {
+        cartDrawer.classList.add('translate-x-full');
+        setTimeout(() => {
+          cartBackdrop.classList.add('hidden');
+        }, 300);
+      }
+    };
+
+    if (openCartBtn) openCartBtn.addEventListener('click', openCartDrawer);
+    if (closeCartBtn) closeCartBtn.addEventListener('click', closeCartDrawer);
+    if (cartBackdrop) {
+      cartBackdrop.addEventListener('click', (e) => {
+        if (e.target === cartBackdrop) closeCartDrawer();
+      });
+    }
+
+    // 5. PRODUCT DETAIL MODAL
+    let currentModalProductId = null;
+    const detailModal = document.getElementById('product-detail-modal');
+    const detailModalBox = document.getElementById('detail-modal-box');
+    const modalQtyInput = document.getElementById('modal-qty-input');
+    const modalQtyMinus = document.getElementById('modal-qty-minus');
+    const modalQtyPlus = document.getElementById('modal-qty-plus');
+    const modalAddBtn = document.getElementById('modal-add-btn');
+    const modalWaBtn = document.getElementById('modal-wa-btn');
+
+    window.openProductModal = function(id) {
+      const product = inventoryData.find(item => item.id === id);
+      if (!product || !detailModal || !detailModalBox) return;
+
+      currentModalProductId = id;
+      document.getElementById('detail-category-badge').textContent = product.categoryLabel;
+      document.getElementById('detail-icon').className = product.icon + ' text-5xl mb-2';
+      document.getElementById('detail-title').textContent = product.name;
+      document.getElementById('detail-price').textContent = `${formatRupiah(product.price)} / hari`;
+      document.getElementById('detail-desc').textContent = product.desc;
+
+      if (modalQtyInput) modalQtyInput.value = 1;
+
+      // WhatsApp consultation for this product
+      if (modalWaBtn) {
+        modalWaBtn.onclick = () => {
+          const text = encodeURIComponent(`Halo Ahli Perkap Malang, saya ingin konsultasi mengenai sewa "${product.name}" (${formatRupiah(product.price)}/hari).`);
+          window.open(`https://wa.me/6281234567890?text=${text}`, '_blank');
+        };
+      }
+
+      detailModal.classList.remove('hidden');
+      requestAnimationFrame(() => {
+        detailModalBox.classList.remove('scale-95', 'opacity-0');
+        detailModalBox.classList.add('scale-100', 'opacity-100');
+      });
+    };
+
+    window.closeProductModal = function() {
+      if (!detailModal || !detailModalBox) return;
+      detailModalBox.classList.remove('scale-100', 'opacity-100');
+      detailModalBox.classList.add('scale-95', 'opacity-0');
+      setTimeout(() => {
+        detailModal.classList.add('hidden');
+      }, 200);
+    };
+
+    if (modalQtyMinus) {
+      modalQtyMinus.addEventListener('click', () => {
+        if (modalQtyInput) {
+          let val = parseInt(modalQtyInput.value, 10) || 1;
+          if (val > 1) modalQtyInput.value = val - 1;
+        }
+      });
+    }
+
+    if (modalQtyPlus) {
+      modalQtyPlus.addEventListener('click', () => {
+        if (modalQtyInput) {
+          let val = parseInt(modalQtyInput.value, 10) || 1;
+          modalQtyInput.value = val + 1;
+        }
+      });
+    }
+
+    if (modalAddBtn) {
+      modalAddBtn.addEventListener('click', () => {
+        if (currentModalProductId) {
+          const qty = parseInt(modalQtyInput ? modalQtyInput.value : 1, 10) || 1;
+          addToCart(currentModalProductId, qty);
+          closeProductModal();
+        }
+      });
+    }
+
+    // 6. BOOKING FORM MODAL & WHATSAPP GENERATION
+    const bookingModal = document.getElementById('booking-form-modal');
+    const bookingModalBox = document.getElementById('booking-modal-box');
+    const rentalForm = document.getElementById('rental-request-form');
+    const startDateInput = document.getElementById('form-start-date');
+    const endDateInput = document.getElementById('form-end-date');
+    const dateError = document.getElementById('date-error');
+
+    window.openBookingFormModal = function() {
+      if (rentalCart.length === 0) {
+        showToast('Pilih minimal satu perlengkapan terlebih dahulu', 'info');
+        return;
+      }
+
+      closeCartDrawer();
+
+      // Populate summary
+      const formItemCount = document.getElementById('form-item-count');
+      const formItemNames = document.getElementById('form-item-names');
+      if (formItemCount) {
+        const totalQty = rentalCart.reduce((sum, item) => sum + item.qty, 0);
+        formItemCount.textContent = `${rentalCart.length} Jenis (${totalQty} Unit)`;
+      }
+      if (formItemNames) {
+        formItemNames.textContent = rentalCart.map(item => `${item.name} (${item.qty}x)`).join(', ');
+      }
+
+      // Default date to today and tomorrow
+      const today = new Date().toISOString().split('T')[0];
+      if (startDateInput && !startDateInput.value) startDateInput.value = today;
+      if (endDateInput && !endDateInput.value) endDateInput.value = today;
+
+      if (bookingModal && bookingModalBox) {
+        bookingModal.classList.remove('hidden');
+        requestAnimationFrame(() => {
+          bookingModalBox.classList.remove('scale-95', 'opacity-0');
+          bookingModalBox.classList.add('scale-100', 'opacity-100');
+        });
+      }
+    };
+
+    window.closeBookingModal = function() {
+      if (!bookingModal || !bookingModalBox) return;
+      bookingModalBox.classList.remove('scale-100', 'opacity-100');
+      bookingModalBox.classList.add('scale-95', 'opacity-0');
+      setTimeout(() => {
+        bookingModal.classList.add('hidden');
+      }, 200);
+    };
+
+    if (rentalForm) {
+      rentalForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById('form-name').value.trim();
+        const phone = document.getElementById('form-phone').value.trim();
+        const startDate = startDateInput.value;
+        const endDate = endDateInput.value;
+        const location = document.getElementById('form-location').value.trim();
+        const notes = document.getElementById('form-notes').value.trim();
+
+        // Validate Date: End date cannot be before Start date
+        if (new Date(endDate) < new Date(startDate)) {
+          if (dateError) dateError.classList.remove('hidden');
+          return;
+        } else {
+          if (dateError) dateError.classList.add('hidden');
+        }
+
+        // Calculate Days
+        const diffTime = Math.abs(new Date(endDate) - new Date(startDate));
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)) + 1;
+
+        // Calculate Subtotal
+        let subtotalPerDay = 0;
+        let itemsListText = '';
+        rentalCart.forEach((item, index) => {
+          const itemSub = item.price * item.qty;
+          subtotalPerDay += itemSub;
+          itemsListText += `  ${index + 1}. ${item.name} — ${item.qty} unit (${formatRupiah(item.price)}/hari)\n`;
+        });
+
+        const totalEstimated = subtotalPerDay * diffDays;
+
+        // Construct Formal WhatsApp Message
+        let waMessage = `*PERMINTAAN SEWA PERLENGKAPAN ACARA*\n`;
+        waMessage += `Kepada: Ahli Perkap Malang\n\n`;
+        waMessage += `Saya ingin mengajukan permintaan sewa perlengkapan dengan rincian sebagai berikut:\n\n`;
+        waMessage += `*Data Pemesan:*\n`;
+        waMessage += `• Nama: ${name}\n`;
+        waMessage += `• WhatsApp: ${phone}\n`;
+        waMessage += `• Lokasi Acara: ${location}\n`;
+        waMessage += `• Tanggal Mulai: ${startDate}\n`;
+        waMessage += `• Tanggal Selesai: ${endDate} (${diffDays} hari pemakaian)\n\n`;
+        waMessage += `*Daftar Perlengkapan:*\n`;
+        waMessage += `${itemsListText}\n`;
+        waMessage += `• *Estimasi Total Sewa:* ${formatRupiah(totalEstimated)} (${diffDays} hari)\n`;
+        if (notes) {
+          waMessage += `• Catatan: ${notes}\n`;
+        }
+        waMessage += `\nMohon informasi ketersediaan unit dan konfirmasi jadwal dari pihak Ahli Perkap Malang. Terima kasih.`;
+
+        showToast('Membuka WhatsApp dengan rincian permintaan...', 'success');
+        closeBookingModal();
+
+        const encodedMsg = encodeURIComponent(waMessage);
+        window.open(`https://wa.me/6281234567890?text=${encodedMsg}`, '_blank');
+      });
+    }
+
+    // 7. TOAST NOTIFICATION HELPER
+    window.showToast = function(msg, type = 'info') {
+      const container = document.getElementById('toast-container');
+      if (!container) return;
+
+      const toast = document.createElement('div');
+      toast.className = 'pointer-events-auto flex items-center gap-2.5 px-4 py-3 rounded-xl bg-charcoal-900 text-white text-xs font-semibold shadow-xl border border-charcoal-700 transform transition-all duration-300 translate-y-2 opacity-0';
+
+      let iconHtml = '<i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>';
+      if (type === 'info') iconHtml = '<i class="fa-solid fa-circle-info text-primary-400 text-sm"></i>';
+
+      toast.innerHTML = `${iconHtml}<span>${msg}</span>`;
+      container.appendChild(toast);
+
+      requestAnimationFrame(() => {
+        toast.classList.remove('translate-y-2', 'opacity-0');
+      });
+
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-2');
+        setTimeout(() => toast.remove(), 300);
+      }, 3500);
+    };
+
+    // 8. ACCORDION FAQ
+    document.querySelectorAll('.faq-toggle').forEach(btn => {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('i');
+      if (content) content.style.display = 'none';
+
+      btn.addEventListener('click', () => {
+        const isOpen = content.style.display === 'block';
+        document.querySelectorAll('.faq-content').forEach(c => c.style.display = 'none');
+        document.querySelectorAll('.faq-toggle i').forEach(ic => ic.style.transform = 'rotate(0deg)');
+
+        if (!isOpen) {
+          content.style.display = 'block';
+          if (icon) icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+
+    // Expand first FAQ by default
+    const firstFaq = document.querySelector('.faq-toggle');
+    if (firstFaq) {
+      const content = firstFaq.nextElementSibling;
+      const icon = firstFaq.querySelector('i');
+      if (content) content.style.display = 'block';
+      if (icon) icon.style.transform = 'rotate(180deg)';
+    }
+
+    // 9. EVENT LISTENERS SETUP
+    document.addEventListener('DOMContentLoaded', () => {
+      // Set footer year
+      const year = document.getElementById('current-year');
+      if (year) year.textContent = new Date().getFullYear();
+
+      // Mobile Menu
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileBtn && mobileMenu) {
+        mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+          link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+      }
+
+      // Catalog Search & Sort
+      const searchInput = document.getElementById('search-input');
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          searchQuery = e.target.value.toLowerCase().trim();
+          renderCatalogue();
+        });
+      }
+
+      const sortSelect = document.getElementById('sort-select');
+      if (sortSelect) {
+        sortSelect.addEventListener('change', (e) => {
+          currentSort = e.target.value;
+          renderCatalogue();
+        });
+      }
+
+      // Category Tabs Click
+      document.querySelectorAll('.cat-filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const cat = btn.getAttribute('data-cat');
+          filterByCategory(cat);
+        });
+      });
+
+      // Initial Render
+      renderCatalogue();
+      updateCartUI();
+    });
+  </script>
+
+</body>
+</html>
